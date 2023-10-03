@@ -1,0 +1,19 @@
+<% for(var i=0; i < data.length; i++) {
+<div class="card" id="<%= data[i].id_sepatu %>">
+    <div class="add-actives">
+        <div class="card-image">
+            <img src="<%= data[i].gambar_sepatu %>" alt="<%= data[i].nama_sepatu %>" class="img">
+        </div>
+        <div class="card-body">
+        <div class="card-text">
+            <p><%= data[i].nama_sepatu %></p>
+            <h4><%= data[i].deskripsi %></h4>
+        </div>
+        </div>
+            <a onclick="toggleIcon('heartIcon<%= data[i].id_sepatu %>', 'fa-regular', 'fa-solid', '#db0f0f')" class="icon">
+                <i id="heartIcon<%= data[i].id_sepatu %>" class="fa-regular fa-heart" style="color: #ff0000;"></i>
+            </a>
+            <a class="icon" href="detail-product.html"><i class="bi bi-cart3" style="color: #93019d;"></i></a>
+        </div>
+    </div>
+} %>
