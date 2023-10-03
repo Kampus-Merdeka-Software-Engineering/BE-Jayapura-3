@@ -1,4 +1,4 @@
-// const dataSepatu = require('./sepatu.json');
+const dataSepatu = require('./sepatu.json');
 const sepatu = require("../model/sepatu");
 const fs = require("fs");
 
