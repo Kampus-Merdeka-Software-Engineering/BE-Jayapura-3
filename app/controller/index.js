@@ -4,16 +4,12 @@ const fs = require("fs");
 
 const path = require("path");
 
-sepatu.findAll()
-    .then(function (data) 
-    {
-        const sepatuData = data; 
-    })
-    .catch(function (err) {
-        res.json({
-            error: err,
-    });
-});
+function getSepatuSQL(req,res,next){
+    sepatu.findAll()
+        .then(function(data){
+            res.json(data);
+        })
+}
 
 const filePath = path.join(__dirname, "sepatu.json");
 function getSepatu(req, res, next) {
@@ -64,4 +60,5 @@ fs.readFile(filePath, "utf8", (err, jsonString) => {
 module.exports = {
     getSepatu,
     addSepatu,
+    getSepatuSQL
 };
