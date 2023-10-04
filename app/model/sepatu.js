@@ -9,7 +9,7 @@ const sepatu = connection.define("sepatu",{
     brand :{type: sequelize.DataTypes.STRING},
     jenis_sepatu:{type: sequelize.DataTypes.STRING},
     detail_sepatu:{type: sequelize.DataTypes.TEXT},
-    deskirpsi:{type: sequelize.DataTypes.STRING},
+    deskripsi:{type: sequelize.DataTypes.STRING},
 },{
     freezeTableName: true,
     timestamps: false
