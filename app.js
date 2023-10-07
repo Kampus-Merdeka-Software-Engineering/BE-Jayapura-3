@@ -34,7 +34,7 @@ route. */
 app.use("/api/auth", authRouter);
 /* The line `app.use("/api/products", checkAuth, productRouter);` is mounting the `productRouter`
 middleware at the `/api/products` route. */
-app.use("/api/products", productRouter);
+app.use("/api/products", checkAuth, productRouter);
 /* The line `app.use("/api/cart", checkAuth, cartRouter);` is mounting the `cartRouter` middleware at
 the `/api/cart` route. */
 app.use("/api/cart", checkAuth, cartRouter);
