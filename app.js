@@ -43,4 +43,4 @@ app.use("/api/user", userRouter);
 
 /* `app.listen(port, () => console.log(`Server app listening on port !`));` is starting the
 Express server and telling it to listen for incoming requests on the specified `port`. */
-app.listen(port, () => console.log(`Server app listening on port ${port}!`));
+app.listen(port, "0.0.0.0", () => console.log(`Server app listening on port ${port}!`));
