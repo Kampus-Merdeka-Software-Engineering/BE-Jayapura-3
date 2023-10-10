@@ -2,6 +2,8 @@
 # Backend Walkwise .Co
 deploy : (https://kampus-merdeka-software-engineering.github.io/BE-Jayapura-3/)
 
+domain: (https://be-jayapura-3-production.up.railway.app/)
+
 ## Installation
 
 ```bash
