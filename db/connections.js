@@ -1,11 +1,11 @@
 import mysql from "mysql2";
 
 const connection = mysql.createConnection({
-  host: "mysql-capstone-rasikhamuthia-db1c.aivencloud.com",
+  host: "mysql-23dbfc2c-narendrapamungkas07-97ea.a.aivencloud.com",
   user: "avnadmin",
-  password: "AVNS_GVq0YXk1yeugDoOaFhR",
+  password: "AVNS_d9nZNjN1OD2JvKCdkLK",
   database: "defaultdb",
-  port: 14566,
+  port:15110,
 });
 
 connection.connect((error) => {
